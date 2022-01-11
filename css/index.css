@@ -4,16 +4,84 @@ body{
     height:auto; 
     width:100%;
 }
+#login-form{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#loginInput{
+    width: 150px;
+    height: 21px;
+    border-radius: 10px;
+    border-width: 0.5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+button{
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 0px;
+    width: 80px;
+    text-align:  center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border:1px solid rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#case{
+    background-color: aliceblue;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #greeting{
-    color: aliceblue;
+    color: #424242;
+    text-align: center;
 }
 
-#clock{
-    color: aliceblue;
+#current{
+    margin-top: 10px;
+    color: #424242;
+    text-align: center;
 }
 
-#quotes{
-    color: aliceblue;
+#time{
+    margin-top: 10px;
+    color: #424242;
+    text-align: center;
+}
+
+#quote{
+    margin-top: 10px;
+    color: #424242;
+    text-align: center;
+}
+#author{
+    margin-top: 3px;
+    color: #424242;
+    text-align: center;
+}
+
+#crudForm{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#crudList{
+    color: #424242;
+    list-style:none;
+    text-align: center;
 }
 
 .hidden{

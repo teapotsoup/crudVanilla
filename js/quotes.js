@@ -45,7 +45,8 @@ const quotes = [
         author: "Jay-Z",
     }
 ]
-const qut = document.querySelector("#quotes");
+const qut = document.querySelector("#quote");
+const author = document.querySelector("#author");
 const rand = Math.floor(Math.random() * quotes.length);
-qut.innerHTML = `${quotes[rand].quote} | ${quotes[rand].author} `;
-
+qut.innerHTML = `${quotes[rand].quote}`;
+author.innerHTML = `${quotes[rand].author}`;

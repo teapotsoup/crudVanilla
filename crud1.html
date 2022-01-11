@@ -7,22 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+    <!-- 테스트 -->
 </head>
 
 
 <body id="backgroundimg">
-    <form class="hidden" id="login-form">
-        <input type="text">
-        <button>Log In</button>
-    </form>
+    <div id="case">
+        <form class="hidden" id="login-form">
+            <input type="text" id="loginInput">
+            <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <div id="current"></div>
+        <div id="time"></div>
 
-    <h1 id="greeting" class="hidden"></h1>
-    <div id="clock"></div>
-    <div id="quotes"></div>
-    <form id="crudForm">
-        <input type="text">
-    </form>
-    <ul id="crudList"></ul>
+        <div class="odometer"></div>
+        <div class="odometer"></div>
+        <div class="odometer"></div>
+
+        <div id="quote"></div>
+        <div id="author"></div>
+        <form id="crudForm">
+            <input type="text">
+        </form>
+        <ul id="crudList"></ul>
+    </div>
+    <script>
+        window.onload = function () {
+            const odometer = document.querySelectorAll(".odometer");
+            odometer[0].innerHTML = 100;
+            odometer[1].innerHTML = 3000;
+            odometer[2].innerHTML = 2500;
+        };
+    </script>
+    <script type="text/javascript" src="js/odometer.min.js"></script><!-- 테스트 -->
     <script src="js/index.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/backImg.js"></script>

@@ -19,8 +19,8 @@ function addCrudList(input) {
     const formForInput = document.createElement("form");
     const inputEdit = document.createElement("input");
     formForInput.id = "formForInput";
-    buttonDelete.innerText = "x";
-    buttonEdit.innerText = "E";
+    buttonDelete.innerText = "DELETE";
+    buttonEdit.innerText = "EDIT";
     inputEdit.style.display = 'none';
     li.appendChild(span);
     li.appendChild(buttonDelete);
@@ -45,6 +45,7 @@ function addCrudList(input) {
         function isKey(e) {
             if (parseInt(e.key) === targetKey) {
                 e.text = inputEdit.value;
+                inputEdit.style.display = 'none'
                 saveInLocalStorage();
             }
         }
