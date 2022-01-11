@@ -2,15 +2,33 @@
 <html lang="en">
 
 <head>
-    <title>practiceHard</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+
+<body id="backgroundimg">
+    <form class="hidden" id="login-form">
+        <input type="text">
+        <button>Log In</button>
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="clock"></div>
+    <div id="quotes"></div>
     <form id="crudForm">
         <input type="text">
     </form>
     <ul id="crudList"></ul>
-    <script src="crud1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/backImg.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/crud1.js"></script>
 </body>
+
 
 </html>

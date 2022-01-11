@@ -1,0 +1,21 @@
+body{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height:auto; 
+    width:100%;
+}
+#greeting{
+    color: aliceblue;
+}
+
+#clock{
+    color: aliceblue;
+}
+
+#quotes{
+    color: aliceblue;
+}
+
+.hidden{
+    display: none;
+}
