@@ -19,13 +19,20 @@
             <button>Log In</button>
         </form>
         <h1 id="greeting" class="hidden"></h1>
-        <div id="current"></div>
-        <div id="time"></div>
-
-        <div class="odometer"></div>
-        <div class="odometer"></div>
-        <div class="odometer"></div>
-
+        <div id="current">
+            <span id=mon class="odometer"></span>
+            <span>월</span>
+            <span id=dat class="odometer"></span>
+            <span>일</span>
+            <span id=daY></span>
+            <span id=amPm></span>
+            <span id=h class="odometer"></span>
+            <span>시</span>
+            <span id=min class="odometer"></span>
+            <span>분</span>
+            <span id=sec class="odometer"></span>
+            <span>초</span>
+        </div>
         <div id="quote"></div>
         <div id="author"></div>
         <form id="crudForm">
@@ -33,17 +40,10 @@
         </form>
         <ul id="crudList"></ul>
     </div>
-    <script>
-        window.onload = function () {
-            const odometer = document.querySelectorAll(".odometer");
-            odometer[0].innerHTML = 100;
-            odometer[1].innerHTML = 3000;
-            odometer[2].innerHTML = 2500;
-        };
-    </script>
+
     <script type="text/javascript" src="js/odometer.min.js"></script><!-- 테스트 -->
-    <script src="js/index.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/backImg.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/crud1.js"></script>

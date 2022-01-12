@@ -9,7 +9,6 @@ let array = [];
 function textEdit(e) {
     const li = e.target.parentElement;
 }
-
 function addCrudList(input) {
     let li = document.createElement("li");
     li.id = input.key;
@@ -38,26 +37,37 @@ function addCrudList(input) {
         let content = e.target.parentNode.firstChild.innerText;
         inputEdit.placeholder = content;
     });
-    formForInput.addEventListener("submit", (e) => {
-        e.preventDefault();
-        e.target.parentNode.firstChild.innerText = inputEdit.value;
-        const targetKey = parseInt(e.target.parentNode.id);
-        function isKey(e) {
-            if (parseInt(e.key) === targetKey) {
-                e.text = inputEdit.value;
+    function editInputFunction(event) {
+        event.preventDefault();
+        if (inputEdit.value === "") {
+            alert("빈 항목입니다");
+            editInputFunction();
+        }
+        event.target.parentNode.firstChild.innerText = inputEdit.value;
+        const targetKey = parseInt(event.target.parentNode.id);
+        function isKey(event) {
+            if (parseInt(event.key) === targetKey) {
+                event.text = inputEdit.value;
                 inputEdit.style.display = 'none'
                 saveInLocalStorage();
             }
         }
         array.find(isKey);
-    });
+    }
+    formForInput.addEventListener("submit", editInputFunction
+    );
     span.innerText = input.text;
     crudList.appendChild(li);
 }
-crudForm.addEventListener("submit",
-    (e) => {
-        e.preventDefault();
-        let newInput = crudInput.value;
+
+function crudInputFunction(event) {
+    event.preventDefault();
+    let newInput = crudInput.value;
+    if (newInput === "") {
+        alert("빈 항목입니다");
+        crudInputFunction();
+    }
+    else {
         crudInput.value = "";
         const newInputObj = {
             text: newInput,
@@ -66,7 +76,10 @@ crudForm.addEventListener("submit",
         array.push(newInputObj);
         addCrudList(newInputObj);
         saveInLocalStorage();
-    })
+    }
+}
+
+crudForm.addEventListener("submit", crudInputFunction);
 let savedArray = JSON.parse(localStorage.getItem("array"));
 if (savedArray) {
     array = savedArray;
