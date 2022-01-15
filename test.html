@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio 객체</title>
+
+    <style>
+        body{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding: auto;
+
+        }
+        #mp3Case{
+            width: 50%;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            text-align: center;
+
+        }
+        button{
+            border-style: none;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+  </head>
+  <body>
+      <div id="mp3Case">
+          <div>name</div>
+          <button id="previousSong"><<</button>
+            <button id="playButton">>||</button>             <!-- 토글로 만들예정 -->
+            <button id="pauseButton">pause</button> 
+          <button id="nextSong">>></button>
+      </div>
+    <!-- <button class="btn2">play sound2</button> -->
+    <script src="js/mp3player.js"></script>
+  </body>
+</html>
+
+

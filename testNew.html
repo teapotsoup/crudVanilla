@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+
+<body>
+    <!-- 버튼 태그 생성 -->
+    <button id="btnPlay">재생 버튼</button>
+
+</body>
+
+<script>
+    // Audio 객체 설정
+    const myAudio = new Audio();
+    myAudio.src = "Frank Ocean_In My Room.mp3";
+
+    // 버튼 취득
+    const btnPlay = document.getElementById("btnPlay");
+
+    // 토글 버튼
+    let isitplay = false;
+    btnPlay.onclick = function () {
+        if(isitplay === false){
+            isitplay = true;
+            myAudio.play();
+            btnPlay.innerText="일시정지 버튼";
+        } else{
+            isitplay = false;
+            myAudio.pause();
+            btnPlay.innerText="재생 버튼";
+        }
+    }
+</script>
+</html>
+
+
