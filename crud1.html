@@ -8,45 +8,90 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
-    <!-- 테스트 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
-
 <body id="backgroundimg">
-    <div id="case">
+    <div class="name_weather">
         <form class="hidden" id="login-form">
             <input type="text" id="loginInput">
             <button>Log In</button>
         </form>
         <h1 id="greeting" class="hidden"></h1>
-        <div id="current">
-            <span id=mon class="odometer"></span>
-            <span>월</span>
-            <span id=dat class="odometer"></span>
-            <span>일</span>
-            <span id=daY></span>
-            <span id=amPm></span>
-            <span id=h class="odometer"></span>
-            <span>시</span>
-            <span id=min class="odometer"></span>
-            <span>분</span>
-            <span id=sec class="odometer"></span>
-            <span>초</span>
+        <h1 id="weather" style="color: whitesmoke; display: flex; justify-content: center; margin-top: 20px;">
         </div>
-        <div id="quote"></div>
-        <div id="author"></div>
-        <form id="crudForm">
-            <input type="text">
-        </form>
-        <ul id="crudList"></ul>
     </div>
 
-    <script type="text/javascript" src="js/odometer.min.js"></script><!-- 테스트 -->
-    <script src="js/clock.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/backImg.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/crud1.js"></script>
+    <div class="bigBigCase ">
+        <span>
+            <div class="case">
+                <div id="current">
+                    <span id=mon class="odometer"></span>
+                    <span>월</span>
+                    <span id=dat class="odometer"></span>
+                    <span>일</span>
+                    <span id=daY></span>
+                    <span id=amPm></span>
+                    <span id=h class="odometer"></span>
+                    <span>시</span>
+                    <span id=min class="odometer"></span>
+                    <span>분</span>
+                    <span id=sec class="odometer"></span>
+                    <span>초</span>
+                </div>
+                <div id="quote"></div>
+                <div id="author"></div>
+                <form id="crudForm">
+                    <input type="text">
+                </form>
+                <ul id="crudList"></ul>
+            </div>
+            <div class="case">
+                <div style="margin-top: 15px;">
+                    <div id="songName">곡 이름</div>
+                    <div id="singer">부르는 사람</div>
+                    <div>
+                        <button id="previousSong">이전곡</button>
+                        <button id="btnPlay">재생 버튼</button>
+                        <button id="nextSong">다음곡</button>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="case">
+                <div style="margin-top: 15px;">
+                    <div>미국 관부가세 계산기</div>
+                    <input id="changeInput" style="width: 240px;" type="text" placeholder="1달러부터, 직배시 배송비 제외 금액 입력">
+                    <button id="changeButton">전환</button>
+                    <p id="usd"></p>
+                </div>
+            </div>
+            <div class="case">
+                <form id="bookMark">
+                    <input type="text" class="form-control" placeholder="Write a site name in Eng"
+                        style="background-color: transparent !important;" />
+                </form>
+                <ul style='list-style:none; padding-left: 0px;' id="bookMarkList"></ul>
+            </div>
+        </span>
+    </div>
+
+
+
+
+
+
+        <script src="js/weather.js"></script>
+        <script src="js/bookMark.js"></script>
+        <script type="text/javascript" src="js/odometer.min.js"></script><!-- 테스트 -->
+        <script src="js/clock.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/backImg.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/crud1.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/currency.js"></script>
 </body>
 
 

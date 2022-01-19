@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mp3Case {
+      margin-top: 40px;
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    #songName {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 버튼 태그 생성 -->
+  <div id="mp3Case">
+    <div id="songName">곡 이름</div>
+    <div id="singer">부르는 사람</div>
+    <button id="btnPlay">재생 버튼</button>
+    <div>
+      <button id="previousSong"><<</button>
+          <button id="nextSong">>></button>
+    </div>
+  </div>
+</body>
+
+<script>
+  const previousSong = document.querySelector("#previousSong");
+  const nextSong = document.querySelector("#nextSong");
+  const btnPlay = document.querySelector("#btnPlay");
+  let audioArr = ["../audio/Frank Ocean_In My Room.mp3", "../audio/Frank Ocean_Self Control.mp3", "../audio/joji_EW.mp3"];
+  // Audio 객체 설정
+  const myAudio = new Audio();
+
+  function placing(controlNum) {
+    myAudio.src = audioArr[controlNum];
+    songName.innerHTML = audioArr[controlNum];
+    const song = audioArr[controlNum].substring(9,);
+    const songArr = song.split("_");
+    songName.innerHTML = songArr[1];
+    singer.innerHTML = songArr[0];
+  }
+
+  let controlNum = 0;
+  placing(controlNum);
+  const limit = audioArr.length - 1
+
+
+
+  // 토글 버튼
+  let isitplay = false;
+  function playPause() {
+    if (isitplay === false) {
+      isitplay = true;
+      myAudio.play();
+      btnPlay.innerText = "일시정지 버튼";
+    } else {
+      isitplay = false;
+      myAudio.pause();
+      btnPlay.innerText = "재생 버튼";
+    }
+  }
+
+  function next() {
+    controlNum >= limit ? controlNum = 0 : controlNum += 1;
+    placing(controlNum);
+  }
+
+  function previous() {
+    controlNum <= 0 ? controlNum = limit : controlNum -= 1;
+    placing(controlNum);
+  }
+
+  btnPlay.addEventListener("click", playPause);
+  nextSong.addEventListener("click", next);
+  previousSong.addEventListener("click", previous);
+</script>
+
+</html>

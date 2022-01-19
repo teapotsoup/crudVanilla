@@ -19,8 +19,6 @@ function odo() {
     const ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
     hours = hours ? hours : 12;
-    // minutes = minutes < 10 ? parseInt("0" + minutes) : minutes;
-    // seconds = seconds < 10 ? parseInt("0" + seconds) : seconds;
     mon.innerHTML = monthArr[month];
     dat.innerHTML = date;
     daY.innerHTML = week[day] + "요일";
