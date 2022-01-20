@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        input::-webkit-input-placeholder {
+            color: whitesmoke;
+        }
+    </style>
 </head>
 
 <body id="backgroundimg">
     <div class="name_weather">
         <form class="hidden" id="login-form">
-            <input type="text" id="loginInput">
+            <input type="text" style="background-color: transparent !important;"  placeholder="이름을 적어보세요." id="loginInput">
             <button>Log In</button>
         </form>
         <h1 id="greeting" class="hidden"></h1>
-        <h1 id="weather" style="color: whitesmoke; display: flex; justify-content: center; margin-top: 20px;">
-        </div>
+
+    </div>
+    <div class="name_weather">
+        <h1 id="weather" style="color: whitesmoke; display: flex; justify-content: center; margin-top: 2px;">
     </div>
 
     <div class="bigBigCase ">
@@ -41,14 +48,14 @@
                 </div>
                 <div id="quote"></div>
                 <div id="author"></div>
-                <form id="crudForm">
-                    <input type="text">
+                <form id="crudForm" >
+                    <input type="text" style="background-color: transparent !important;"  placeholder="해야 할 일을 적어보세요.">
                 </form>
                 <ul id="crudList"></ul>
             </div>
             <div class="case">
-                <div style="margin-top: 15px;">
-                    <div id="songName">곡 이름</div>
+                <div style="margin-top: 15px; ">
+                    <div id="songName" style="font-size: 21px;">곡 이름</div>
                     <div id="singer">부르는 사람</div>
                     <div>
                         <button id="previousSong">이전곡</button>
@@ -61,15 +68,16 @@
         <span>
             <div class="case">
                 <div style="margin-top: 15px;">
-                    <div>미국 관부가세 계산기</div>
-                    <input id="changeInput" style="width: 240px;" type="text" placeholder="1달러부터, 직배시 배송비 제외 금액 입력">
+                    <h3 style="color: whitesmoke;">미국 관부가세 계산기</h3>
+                    <input id="changeInput" style="background-color: transparent !important; width: 240px;" type="text" placeholder="1달러부터, 직배시 배송비 제외 금액 입력">
                     <button id="changeButton">전환</button>
                     <p id="usd"></p>
                 </div>
             </div>
             <div class="case">
+                <h3 style="color: whitesmoke;">북마크</h3>
                 <form id="bookMark">
-                    <input type="text" class="form-control" placeholder="Write a site name in Eng"
+                    <input type="text" class="form-control"  placeholder="Write a site name in Eng"
                         style="background-color: transparent !important;" />
                 </form>
                 <ul style='list-style:none; padding-left: 0px;' id="bookMarkList"></ul>

@@ -21,7 +21,7 @@ function paintBookMark(newBookMark) {
     const button = document.createElement("button");
     button.className += "btn btn-outline-secondary btn-sm";
     button.style = "display: inline; margin-left: 10px";
-    button.innerText = "X";
+    button.innerText = "DELETE";
     button.addEventListener("click", (event) => {
         const li = event.target.parentElement;
         li.remove();
