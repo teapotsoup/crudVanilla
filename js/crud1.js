@@ -34,6 +34,7 @@ function addCrudList(input) {
     });
     buttonEdit.addEventListener("click", (e) => {
         inputEdit.style.display = ((inputEdit.style.display != 'none') ? 'none' : '');
+        inputEdit.style.backgroundColor="transparent";
         let content = e.target.parentNode.firstChild.innerText;
         inputEdit.placeholder = content;
     });
