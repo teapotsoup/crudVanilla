@@ -1,6 +1,6 @@
 # crudVanilla
-<h3 align="center">다중 기능 투두리스트 완성</h3>
-<h5 align="center">(북마크, mp3, 미화 관부가세 계산기 등 기타 기능 첨부)</h5>
+<h1 align="center">다중 기능 투두리스트 완성</h1>
+<h3 align="center">(북마크, mp3, 미화 관부가세 계산기 등 기타 기능 첨부)</h3>
 
 
 ![이름_crud](https://user-images.githubusercontent.com/64897060/150476131-06c584e6-0ea3-4509-b7e4-cc5fcfecae44.gif)
