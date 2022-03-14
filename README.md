@@ -26,7 +26,7 @@
 <div align="center">북마크 기능은 링크를 기입하면 홈페이지의 아이콘을 가져오게끔 코드를 짰다.</div>
 
 
-
+![img](https://user-images.githubusercontent.com/64897060/158181675-d227b856-b31f-45c5-abcd-d288f226fec0.gif)
 
 
 
