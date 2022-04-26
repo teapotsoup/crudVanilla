@@ -1,4 +1,3 @@
-# crudVanilla
 <h1 align="center">다중 기능 투두리스트 완성</h1>
 <h3 align="center">(북마크, mp3, 미화 관부가세 계산기 등 기타 기능 첨부)</h3>
 
