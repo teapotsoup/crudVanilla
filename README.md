@@ -4,7 +4,7 @@
 
 ![이름_crud](https://user-images.githubusercontent.com/64897060/150476131-06c584e6-0ea3-4509-b7e4-cc5fcfecae44.gif)
 
-<br/>
+<hr/>
 
 <ul>
   <li>투두리스트, 북마크, 이름 기입란 등은 크롬의 웹 DB인 로컬 스토리지에 저장이 되게끔 했다.</li>
@@ -18,7 +18,7 @@
 
 ![곡_관부가세_북마크](https://user-images.githubusercontent.com/64897060/150475812-0d29302e-0ae0-47ff-9c93-d2df7a10222e.gif)
 
-<br/>
+<hr/>
 
 <div align="center">명언과 배경화면은 랜덤 함수를 통해 자동으로 바뀐다.</div>
 <div align="center">mp3기능은 메인이 아닌만큼 그냥 최대한 단순하게 만들었고, </div>
