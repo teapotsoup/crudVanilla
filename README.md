@@ -5,17 +5,15 @@
 ![이름_crud](https://user-images.githubusercontent.com/64897060/150476131-06c584e6-0ea3-4509-b7e4-cc5fcfecae44.gif)
 
 
-<div align="center">투두리스트, 북마크, 이름 기입란 등은 크롬의 웹 DB인 로컬 스토리지에 저장이 되게끔 했다.</div>
-<div align="center">또한 투두리스트는 삭제, 수정, 저장 모두 가능하게 만들었다.</div>
-<div align="center">현재 나오는 날짜와 지역은 openweather의 api를 가져다 썼다.</div>
-<div align="center">현재 날짜와 시간을 나타내는 부분은 odometer.js를 사용했다</div>
-<div align="center">(옵스큐라 홈페이지에서 쇼핑하다가 결제창에 재밌는 애니메이션이 있길래 속성창에서 힌트를 얻어 구글링해 좀 만져서 적용했다.)</div>
-
-
-
-
-
-
+<ul>
+  <li>투두리스트, 북마크, 이름 기입란 등은 크롬의 웹 DB인 로컬 스토리지에 저장이 되게끔 했다.</li>
+  <li>또한 투두리스트는 삭제, 수정, 저장 모두 가능하게 만들었다.</li>
+  <li>현재 나오는 날짜와 지역은 openweather의 api를 가져다 썼다.</li>
+  <li>현재 날짜와 시간을 나타내는 부분은 odometer.js를 사용했다.</li>
+  <li>투두리스트, 북마크, 이름 기입란 등은 크롬의 웹 DB인 로컬 스토리지에 저장이 되게끔 했다.</li>
+  <li> + odometer라는 재밌는 애니메이션 라이브러리가 있길래 속성창에서 힌트를 얻어 구글링해 좀 만져서 적용했다.</li>
+</ul>
+  
 
 ![곡_관부가세_북마크](https://user-images.githubusercontent.com/64897060/150475812-0d29302e-0ae0-47ff-9c93-d2df7a10222e.gif)
 
